@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @* Single-Line *@
+        @{ string EmpName = "Srikanth";}
+
+        @* Inline *@
+        <h1>Welcome @EmpName</h1>
+
+        <div>
+            @* Multi-Line *@
+            @{
+                if (false)
+                {
+                    <span>Welcome</span>
+                }
+                else
+                {
+                    <span>Hello</span>
+                }
+            }
+
+        </div>
+    </div>
+</body>
+</html>

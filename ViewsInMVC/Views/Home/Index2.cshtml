@@ -1,0 +1,44 @@
+﻿@{
+    var emps = new[]
+    {
+       new  {EmpID=101,EmpName="Srikanth",Salary=12345},
+       new {EmpID=102,EmpName="Sai",Salary=93383},
+       new {EmpID=103,EmpName="Ramesh",Salary=12923},
+       new {EmpID=104,EmpName="Suresh",Salary=73635}
+    };
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index2</title>
+</head>
+<body>
+    <div>
+        <h1 style="text-align:center;">Employee Details are</h1>
+        <hr />
+        <table border="1" align="center">
+            <tr>
+                <th>EmpID</th>
+                <th>EmpName</th>
+                <th>Salary</th>
+            </tr>
+            @{
+                foreach (var item in emps)
+                {
+                    <tr>
+                        <td>@item.EmpID</td>
+                        <td>@item.EmpName</td>
+                        <td>@item.Salary</td>
+                    </tr>
+                }
+            }
+        </table>
+        @* Display the Table data in ascending order based on Salary *@
+        @* Display only Employees whose name starts with "S" *@
+        @* Create a List collection and store all the country names and bind the data with Dropdown in HTML *@
+        @* Create a simple HTML Form which will take user registration *@
+    </div>
+</body>
+</html>
