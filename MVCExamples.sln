@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerInMVC", "Controll
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewsInMVC", "ViewsInMVC\ViewsInMVC.csproj", "{D7AC6D8D-96C4-48D7-A504-950032119745}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCDataSharing", "MVCDataSharing\MVCDataSharing.csproj", "{25883572-0580-4BC9-A4B0-EE3AB7F04142}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D7AC6D8D-96C4-48D7-A504-950032119745}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7AC6D8D-96C4-48D7-A504-950032119745}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7AC6D8D-96C4-48D7-A504-950032119745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25883572-0580-4BC9-A4B0-EE3AB7F04142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25883572-0580-4BC9-A4B0-EE3AB7F04142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25883572-0580-4BC9-A4B0-EE3AB7F04142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25883572-0580-4BC9-A4B0-EE3AB7F04142}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

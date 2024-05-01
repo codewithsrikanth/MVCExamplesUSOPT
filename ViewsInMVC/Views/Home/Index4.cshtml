@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index4</title>
+</head>
+<body>
+    <div>
+        <h1>Product Form</h1>
+        <hr />
+        <form action="" method="post">
+            Enter Product name:
+            <input type="text" name="pName" />
+            <br />
+            Enter Product Price:
+            <input type="text" name="pPrice" />
+            <br />
+            Enter Quantity:
+            <input type="text" name="pQty" />
+            <br />
+            <input type="submit" name="SB1" value="Get Total" />
+        </form>
+        <div>
+            @{
+                if (IsPost)
+                {
+                    string pname = Request["pName"];
+                    double price =Convert.ToDouble(Request["pPrice"]);
+                    int qty = Convert.ToInt32(Request["pQty"]);
+
+                    double total = price * qty;
+                    <span style="color:green;">Product Name is: @pname and Total cost is: @total</span>
+                }
+            }
+        </div>
+    </div>
+</body>
+</html>

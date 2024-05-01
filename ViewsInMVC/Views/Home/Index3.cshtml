@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index3</title>
+</head>
+<body>
+    <div>
+        <h1>Example with Forms Demo-1</h1>
+        <hr />
+        <form action="" method="post">
+            <label>Enter your name: </label>
+            <br /><br />
+            <input type="text" name="t1" />
+            <br /><br />
+            <input type="submit" name="SB1" value="Submit" />
+        </form>
+        @if (IsPost)
+        {
+            <div>
+                <span>Welcome @Request["t1"] </span>
+            </div>
+        }
+    </div>
+</body>
+</html>

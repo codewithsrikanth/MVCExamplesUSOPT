@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index5</title>
+</head>
+<body>
+    <div>
+        <h2>Login Page</h2>
+        <hr />
+        @using (Html.BeginForm("Index5", "Home", FormMethod.Post))
+        {
+            @Html.Label("Enter Email: ")
+            @Html.TextBox("email")
+            <br />
+            @Html.Label("Enter Password: ")
+            @Html.Password("pwd")
+            <br />
+            @Html.Label("Select Type of User: ")
+            @Html.DropDownList("Users")
+            <br />
+            <input type="submit" name="SB1" value="Login" />
+        }
+    </div>
+    <div>
+        @{
+            if (IsPost)
+            {
+                string email = Request["email"];
+                string pwd = Request["pwd"];
+                if (email == "admin@gmail.com" && pwd == "admin@123")
+                {
+                    <span style="color:green;">Login Success</span>
+                }
+                else
+                {
+                    <span style="color:red;">Login Failed</span>
+                }
+            }
+
+        }
+    </div>
+</body>
+</html>

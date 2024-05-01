@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>Example with Form Collection</h1>
+        <hr />
+        <form action="" method="post">
+            Enter Product Name:
+            <input type="text" name="pname"  />
+            <br />
+            Enter Product Price: 
+            <input type="text" name="price" />
+            <br />
+            Enter Product Quantity: 
+            <input type="text" name="qty"  />
+            <br />
+            <input type="submit" name="SB1" value="Submit" />
+        </form>
+        <div>
+            @if (IsPost)
+            {
+                <span>This is Post Request</span>
+            }
+            else
+            {
+                <span>This is a get request</span>
+            }
+        </div>
+    </div>
+</body>
+</html>
