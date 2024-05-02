@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>ViewData and ViewBag Example</h1>
+        <hr />
+        <form action="" method="post">
+            Enter Product name:
+            <input type="text" name="pname" />
+            <br />
+            Enter Price:
+            <input type="text" name="price" />
+            <br />
+            Enter Quantity:
+            <input type="text" name="qty" />
+            <br />
+            <input type="submit" name="SB1" value="Submit" />
+        </form>
+    </div>
+    <div>
+        @{
+            if (IsPost)
+            {
+                string productname = Convert.ToString(ViewData["ProductName"]);
+                double total = ViewBag.Total;
+
+               <div>
+                   Product Name is: @productname <br />
+                   Product Cost is: @total
+               </div>
+            }
+        }
+    </div>
+</body>
+</html>

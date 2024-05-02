@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        <h1>Login Page</h1>
+        <hr />
+        @using (Html.BeginForm())
+        {
+            @Html.Label("Enter Username: ")
+            @Html.TextBox("username")
+            <br />
+            @Html.Label("Enter Password: ")
+            @Html.Password("password")
+            <br />
+            <input type="submit" name="sb1" value="Login" />
+        }
+    </div>
+    <div>
+        @{ 
+            if(IsPost == true)
+            {
+                <span style="color:red;">@ViewData["msg"]</span>
+            }
+        }
+    </div>
+</body>
+</html>
