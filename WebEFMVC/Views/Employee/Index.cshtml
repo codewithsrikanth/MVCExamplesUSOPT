@@ -1,0 +1,24 @@
+﻿@model List<WebEFMVC.Models.EmpDetail>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h2>Employee List</h2>
+        <hr />
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>
+                    <a href="/Employee/Details/@item.EmployeeId">@item.Name</a>
+                </li>
+            }
+        </ul>
+    </div>
+</body>
+</html>

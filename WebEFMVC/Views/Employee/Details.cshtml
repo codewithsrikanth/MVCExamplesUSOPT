@@ -1,0 +1,29 @@
+﻿@model WebEFMVC.Models.EmpDetail
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div> 
+        <h2>EmpDetails are:</h2>
+        <dl>
+            <dt>Employee ID</dt>
+            <dd>@Model.EmployeeId</dd>
+            <dt>Name</dt>
+            <dd>@Model.Name</dd>
+            <dt>City</dt>
+            <dd>@Model.City</dd>
+            <dt>Gender</dt>
+            <dd>@Model.Gender</dd>
+        </dl>
+    </div>
+</body>
+</html>

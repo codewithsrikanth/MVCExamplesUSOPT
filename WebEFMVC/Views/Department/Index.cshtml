@@ -1,0 +1,26 @@
+﻿@model IEnumerable<WebEFMVC.Models.Department>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h2>Department List</h2>
+        <hr />
+        <ul>
+            @foreach (var item in Model)
+            {
+                //<li>@Html.ActionLink(item.Name, "Index", "Employee", new {departmentId=item.Id},null)</li>
+                <li>
+                    <a href="/Employee/Index?departmentId=@item.Id">@item.Name</a>
+                </li>
+            }
+        </ul>
+        
+    </div>
+</body>
+</html>
