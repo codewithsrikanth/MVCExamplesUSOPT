@@ -1,0 +1,31 @@
+﻿1. Add the Entity Framework Reference from Nuget Package Manager
+2. Define the connection string in web.config file
+	<connectionStrings>
+		<add name="NorthwindConnection" connectionString="server=.;integrated security=true;database=NorthwindDB" providerName="System.Data.SqlClient" />
+	</connectionStrings>
+3. Define the Model classes
+4. Create the Context class
+
+--------------------------------------------------------------------------------------------------------------------
+Validations: 
+- It is nothing but verifying the user's input while integracting with the application.
+- In web development we have two types of validations
+	- Client Side Validations
+		- These validations are performed at browser level by using Javascript and it's libraries.
+		- Everything can't be handled by using Javascript/client side
+		- User can stop executing javascript from browser level.
+
+	- Server Side Validations
+		- To perform server side validation we use "Data Annotations".
+		- It is an attribute class, which can be defined at model class property level.
+		- Examples:
+			- [Required]
+			- [Range]
+			- [StringLength]
+			- [Min]
+			- [Max]
+			- [EmailAddress] etc.
+
+Assignments:
+- What is HTML Helpers in ASP.Net MVC and types of HTML Helpers?
+- Prepare a registration page using HTML Helper methods?
