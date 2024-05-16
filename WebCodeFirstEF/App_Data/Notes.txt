@@ -15,7 +15,7 @@ Validations:
 		- Everything can't be handled by using Javascript/client side
 		- User can stop executing javascript from browser level.
 
-	- Server Side Validations
+	- Server Side Validations (Application and DB Level)
 		- To perform server side validation we use "Data Annotations".
 		- It is an attribute class, which can be defined at model class property level.
 		- Examples:
