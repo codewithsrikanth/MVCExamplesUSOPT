@@ -1,0 +1,27 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+    <div> 
+        <hgroup>
+            <h1>Unknown Error</h1>
+            <h3>An unknown error has occured, we are working on it. please try after sometime</h3>
+            <hr />
+            <h4>Controller Name: @Model.ControllerName</h4>
+            <h4>Action Method Name: @Model.ActionName</h4>
+            <h4>Exception: @Model.Exception</h4>
+
+        </hgroup>
+    </div>
+</body>
+</html>

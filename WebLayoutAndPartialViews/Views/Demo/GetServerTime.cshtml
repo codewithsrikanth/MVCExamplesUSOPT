@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetServerTime</title>
+</head>
+<body>
+    <div>
+        <form action="" method="post">
+            <input type="text" name="t1" />
+            <button type="submit" name="sb1">GetServer Time</button>
+        </form>
+        @{
+            if (IsPost)
+            {
+                <h3>@ViewBag.Msg</h3>
+            }
+        }
+    </div>
+</body>
+</html>

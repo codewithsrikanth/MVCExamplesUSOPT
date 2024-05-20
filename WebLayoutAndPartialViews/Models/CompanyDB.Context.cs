@@ -26,5 +26,7 @@ namespace WebLayoutAndPartialViews.Models
         }
     
         public virtual DbSet<Employee> Employees { get; set; }
+
+        public System.Data.Entity.DbSet<WebLayoutAndPartialViews.Models.Product> Products { get; set; }
     }
 }

@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index1</title>
+</head>
+<body>
+    <div>
+        <form action="" method="post">
+            <input type="text" name="t1" />
+            <button type="submit" name="sb1">Submit
+            </button>
+        </form>
+    </div>
+    @{
+        if (IsPost)
+        {
+            <h3>@ViewBag.msg</h3>
+        }
+    }
+</body>
+</html>
