@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAnnotationsinMVC", "Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebLayoutAndPartialViews", "WebLayoutAndPartialViews\WebLayoutAndPartialViews.csproj", "{247484B0-127B-44A7-AC76-9E99E04C292A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMVCWithAPI", "WebMVCWithAPI\WebMVCWithAPI.csproj", "{C3686538-A1E1-4289-B9D3-C041C0661519}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{247484B0-127B-44A7-AC76-9E99E04C292A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{247484B0-127B-44A7-AC76-9E99E04C292A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{247484B0-127B-44A7-AC76-9E99E04C292A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3686538-A1E1-4289-B9D3-C041C0661519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3686538-A1E1-4289-B9D3-C041C0661519}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3686538-A1E1-4289-B9D3-C041C0661519}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3686538-A1E1-4289-B9D3-C041C0661519}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
